@@ -1,0 +1,108 @@
+ @import url('https://fonts.cdnfonts.com/css/miama');
+ @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+ /* font  */
+
+ * {
+     margin: 0;
+     padding: 0;
+ }
+
+ :root {
+     --bg-primary: black;
+     --bg-secondary: rgb(34, 34, 34);
+     --bg-lighten: rgb(230, 83, 60);
+ }
+
+ .container {
+     width: 1060px;
+     margin: 0px auto;
+ }
+
+ .row {
+     display: flex;
+ }
+
+ a,
+ a:hover {
+     text-decoration: none;
+ }
+
+ body {
+     font-family: Inter;
+     background-color: rgb(0, 0, 0);
+     color: white;
+ }
+
+ /* basic css */
+ /* header start */
+ /* navbar start */
+ #header {
+     max-width: 1440px;
+     margin: 0px auto;
+ }
+
+ #header .row {
+     justify-content: space-between;
+     align-items: center;
+
+ }
+
+ #header .navbar {
+     height: 46px;
+     margin-top: 58px;
+ }
+
+ #header .navbar .logo h1 {
+     color: rgb(230, 83, 60);
+     font-size: 2rem;
+     font-weight: 800;
+     line-height: 120%;
+     letter-spacing: 0%;
+     text-align: left;
+     font-style: italic;
+ }
+
+ #header .nav-item ul {
+     list-style: none;
+     box-sizing: border-box;
+     border: 1px solid rgba(255, 255, 255, 0.1);
+     border-radius: 39px;
+     padding: 12px 20px;
+ }
+
+ #header .nav-item a {
+     margin: 0px 23px;
+     font-size: 1.2rem;
+     padding: 8px 20px;
+     color: white;
+     transition: all linear 0.2s;
+     border-radius: 46px;
+
+ }
+
+ #header .nav-item a:hover,
+ .active {
+     background-color: var(--bg-lighten);
+ }
+
+ /* navbar end */
+ #header {}
+
+ #header {}
+
+ #header {}
+
+ #header {}
+
+ #header {}
+
+ #header {}
+
+ #header {}
+
+ #header {}
+
+ #header {}
+
+ /* header end */
