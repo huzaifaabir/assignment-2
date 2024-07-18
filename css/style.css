@@ -99,7 +99,6 @@
  }
 
  #header .hero-section .title {
-     margin-right: 50px;
      flex: 1;
  }
 
@@ -338,7 +337,7 @@
      #header .hero-section .title {
          margin: 50px 0px;
      }
-
+     
      .hero-section {
          flex-direction: column;
      }
@@ -375,14 +374,17 @@
  }
 
  /* small device media-quary  end*/
- /* med-device media-quary start*/
+ 
+ /* xl-device media-quary start*/
  @media screen and (max-width:992px) and (min-width:576px) {
 
      #header .hero-section .title {
-         margin: 70px 70px;
+         margin:70px;
      }
-
-     .hero-section {
+     #header .hero-section .title h1 {
+        margin-right: 180px;
+    }
+.hero-section {
          flex-direction: column;
      }
 
@@ -401,10 +403,6 @@
 
      .navbar {
          margin: 0px 10px;
-     }
-
-     #header .hero-section .title {
-         margin: 80px 180px;
      }
 
      #header .hero-section .img {
@@ -438,6 +436,6 @@
      }
  }
 
- /* med-device media-quary  end*/
+ /* xl-device media-quary  end*/
  /* large device media-quary start*/
  /* large device media-quary  end*/
