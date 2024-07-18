@@ -42,7 +42,6 @@
      margin: 0px auto;
      background: linear-gradient(180.00deg, rgb(17, 17, 17), rgba(119, 119, 119, 0) 100%);
      padding-top: 58px;
-     position: relative;
  }
 
  #header .row {
@@ -101,6 +100,7 @@
 
  #header .hero-section .title {
      margin-right: 50px;
+     flex: 1;
  }
 
  #header .hero-section .title h1 {
@@ -130,6 +130,12 @@
      letter-spacing: 0.5px;
      text-align: left;
      margin-bottom: 28px;
+ }
+
+ #header .hero-section .img {
+     flex: 1;
+     text-align: center;
+     position: relative;
  }
 
  #header .hero-section .btn {
@@ -166,7 +172,9 @@
  }
 
  #header .position-item {
+     display: flex;
      justify-content: space-between;
+     align-items: center;
 
  }
 
@@ -180,11 +188,11 @@
      align-items: center;
      padding: 20px 23px;
      position: absolute;
-     right: 30%;
-     bottom: 11%;
+     left: 0%;
+     bottom: 14%;
  }
 
- #header .positon-item .text-one .circle .fa-solid {
+ #header .positon-item .text-one .fa-solid {
      font-size: 2.5rem;
      color: var(--bg-lighten);
      border-radius: 50px;
@@ -221,13 +229,12 @@
      background: rgba(255, 255, 255, 0.1);
      padding: 17px 24px;
      position: absolute;
-     right: 2%;
-     top: 32%;
+     right: 0%;
+     top: 25%;
  }
 
  #header .positon-item .text-two h1 {
      color: rgb(255, 255, 255);
-
      font-size: 2.5rem;
      font-weight: 900;
      line-height: 40px;
@@ -335,21 +342,21 @@
      .hero-section {
          flex-direction: column;
      }
-     #header .hero-section .btn button a {
-        padding: 16px 20px;
 
-    }
+     #header .hero-section .btn button a {
+         padding: 16px 20px;
+
+     }
 
      #header .positon-item .text-one {
          position: absolute;
-         right: 40%;
-         bottom: 20%;
+         left: -15%;
+         bottom: 45%;
      }
-
      #header .positon-item .text-two {
          position: absolute;
-         right: 0%;
-         top: 55%;
+         right: -15%;
+         top: 8%;
      }
 
      #habit .img-item {
@@ -395,19 +402,25 @@
      .navbar {
          margin: 0px 10px;
      }
+
      #header .hero-section .title {
-        margin:80px 180px;
-    }
+         margin: 80px 180px;
+     }
+
+     #header .hero-section .img {
+         text-align: left;
+     }
+
      #header .positon-item .text-one {
          position: absolute;
-         right: 50%;
-         bottom: 15%;
+         left: 0%;
+         bottom: 25%;
      }
 
      #header .positon-item .text-two {
          position: absolute;
-         right: 25%;
-         top: 60%;
+         right: -20%;
+         top: 10%;
      }
 
      #habit .img-item {
