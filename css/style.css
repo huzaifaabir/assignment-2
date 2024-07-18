@@ -72,10 +72,14 @@
      border: 1px solid rgba(255, 255, 255, 0.1);
      border-radius: 39px;
      padding: 12px 20px;
+
+ }
+
+ #header .nav-item ul li {
+     margin: 0px 23px;
  }
 
  #header .nav-item a {
-     margin: 0px 23px;
      font-size: 1.2rem;
      padding: 8px 20px;
      color: white;
@@ -96,7 +100,7 @@
  }
 
  #header .hero-section .title {
-     width: 520px;
+     margin-right: 50px;
  }
 
  #header .hero-section .title h1 {
@@ -128,6 +132,11 @@
      margin-bottom: 28px;
  }
 
+ #header .hero-section .btn {
+     justify-content: left;
+     align-items: center;
+ }
+
  #header .hero-section .btn button {
      border: none;
      background: none;
@@ -155,6 +164,7 @@
      border: 1px solid rgb(255, 255, 255);
 
  }
+
  #header .position-item {
      justify-content: space-between;
 
@@ -318,23 +328,29 @@
      .navbar {
          display: none;
      }
-     #header .hero-section .title{
-        margin: 50px 20px;
+
+     #header .hero-section .title {
+         margin: 50px 0px;
      }
+
      .hero-section {
          flex-direction: column;
      }
+     #header .hero-section .btn button a {
+        padding: 16px 20px;
+
+    }
 
      #header .positon-item .text-one {
          position: absolute;
          right: 50%;
-         bottom: 25%;
+         bottom: 20%;
      }
 
      #header .positon-item .text-two {
          position: absolute;
-         right: 10%;
-         top: 50%;
+         right: 4%;
+         top: 55%;
      }
 
      #habit .img-item {
@@ -354,17 +370,35 @@
 
  /* small device media-quary  end*/
  /* med-device media-quary start*/
- @media screen and (max-width:992px) and (min-width:576px){
-    .navbar {
-        margin: 40px 30px 0px 30px;
-    }
-    #header .hero-section .title{
-        margin: 70px 70px;
-    }
+ @media screen and (max-width:992px) and (min-width:576px) {
+
+     #header .hero-section .title {
+         margin: 70px 70px;
+     }
+
      .hero-section {
          flex-direction: column;
      }
 
+     #header .nav-item ul li {
+         margin: 0px 8px;
+     }
+
+     #header .nav-item a {
+         padding: 8px 15px;
+     }
+
+     #header .nav-item ul {
+         padding: 12px 10px;
+
+     }
+
+     .navbar {
+         margin: 0px 10px;
+     }
+     #header .hero-section .title {
+        margin:80px 180px;
+    }
      #header .positon-item .text-one {
          position: absolute;
          right: 50%;
