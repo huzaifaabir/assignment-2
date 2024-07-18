@@ -318,7 +318,9 @@
      .navbar {
          display: none;
      }
-
+     #header .hero-section .title{
+        margin: 50px 20px;
+     }
      .hero-section {
          flex-direction: column;
      }
