@@ -222,7 +222,7 @@
      background: rgba(255, 255, 255, 0.1);
      padding: 17px 24px;
      position: absolute;
-     right: 7%;
+     right: 2%;
      top: 32%;
  }
 
@@ -349,7 +349,7 @@
 
      #header .positon-item .text-two {
          position: absolute;
-         right: 4%;
+         right: 0%;
          top: 55%;
      }
 
