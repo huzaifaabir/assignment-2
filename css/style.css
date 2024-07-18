@@ -184,10 +184,9 @@
      bottom: 11%;
  }
 
- #header .positon-item .text-one .circle {
-     width: 40px;
-     height: 40px;
-     background: var(--bg-lighten);
+ #header .positon-item .text-one .circle .fa-solid {
+     font-size: 2.5rem;
+     color: var(--bg-lighten);
      border-radius: 50px;
  }
 
