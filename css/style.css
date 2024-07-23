@@ -19,8 +19,10 @@
      margin: 0px auto;
  }
 
- .row {
-     display: flex;
+
+ button {
+     background: none;
+     border: none;
  }
 
  a,
@@ -41,23 +43,24 @@
      max-width: 1440px;
      margin: 0px auto;
      background: linear-gradient(180.00deg, rgb(17, 17, 17), rgba(119, 119, 119, 0) 100%);
-     padding-top: 58px;
  }
 
- #header .row {
+ #header .nav-bar {
+     padding-top: 50px;
+     display: flex;
      justify-content: space-between;
      align-items: center;
 
  }
 
- .navbar {
-     height: 46px;
-     margin-bottom: 32px;
+ #header .nav-item {
+     border: 2px solid rgba(255, 255, 255, 0.1);
+     border-radius: 39px;
  }
 
- #header .navbar .logo h1 {
-     color: rgb(230, 83, 60);
-     font-size: 2rem;
+ #header .logo h1 {
+     color: var(--bg-lighten);
+     font-size: 2.1rem;
      font-weight: 800;
      line-height: 120%;
      letter-spacing: 0%;
@@ -65,46 +68,57 @@
      font-style: italic;
  }
 
- #header .nav-item ul {
-     list-style: none;
-     box-sizing: border-box;
-     border: 1px solid rgba(255, 255, 255, 0.1);
-     border-radius: 39px;
-     padding: 12px 20px;
-
+ #header .nav-item .manu-icon {
+     display: none;
  }
 
- #header .nav-item ul li {
-     margin: 0px 23px;
+ #header .nav-item ul {
+     list-style: none;
+     display: flex;
+     padding: 10px 2px;
  }
 
  #header .nav-item a {
-     font-size: 1.2rem;
+     color: rgb(255, 255, 255);
+     font-size: 1.1rem;
+     font-weight: 400;
+     line-height: 120%;
+     letter-spacing: 0%;
+     text-align: left;
      padding: 8px 20px;
-     color: white;
-     transition: all linear 0.2s;
+     margin: 0 23px;
      border-radius: 46px;
+     transition: all linear 0.2s;
 
+ }
+ #header .nav-item .start{
+    margin-left: 0;
+ }
+ #header .nav-item .end{
+    margin-right: 0;
  }
 
  #header .nav-item a:hover,
  .active {
-     background-color: var(--bg-lighten);
+     background: var(--bg-lighten);
  }
 
  /* navbar end */
+ /* header start */
  #header .hero-section {
+     display: flex;
      justify-content: space-between;
      align-items: center;
  }
 
  #header .hero-section .title {
-     flex: 1;
+     margin-top: 50px;
+     flex: 4;
  }
 
  #header .hero-section .title h1 {
      color: rgb(255, 255, 255);
-     font-size: 4.87rem;
+     font-size: 4.8rem;
      font-weight: 900;
      line-height: 100%;
      letter-spacing: 0%;
@@ -131,21 +145,20 @@
      margin-bottom: 28px;
  }
 
+ #header .hero-section .img img {
+     margin-top: 32px;
+ }
+
  #header .hero-section .img {
-     flex: 1;
+     flex: 5;
      text-align: center;
      position: relative;
  }
 
  #header .hero-section .btn {
-     justify-content: left;
-     align-items: center;
- }
+     display: flex;
+     gap: 14px;
 
- #header .hero-section .btn button {
-     border: none;
-     background: none;
-     margin-right: 14px;
  }
 
  #header .hero-section .btn button a {
@@ -162,6 +175,7 @@
 
  #header .hero-section .btn-one a {
      background: var(--bg-lighten);
+     text-align: left;
  }
 
  #header .hero-section .btn-two a {
@@ -178,17 +192,17 @@
  }
 
  #header .positon-item .text-one {
-     box-sizing: border-box;
      border: 1px solid rgba(255, 255, 255, 0.1);
      border-radius: 12px;
+     background: rgba(255, 255, 255, 0.1);
      backdrop-filter: blur(20px);
-     background: rgba(48, 48, 48, 0.54);
+     display: flex;
      justify-content: center;
      align-items: center;
      padding: 20px 23px;
      position: absolute;
-     left: 0%;
-     bottom: 14%;
+     left: 10%;
+     bottom: 10%;
  }
 
  #header .positon-item .text-one .fa-solid {
@@ -203,7 +217,6 @@
 
  #header .positon-item .text-one .text-item h1 {
      color: rgb(250, 250, 249);
-
      font-size: 1.5rem;
      font-weight: 900;
      line-height: 24px;
@@ -228,8 +241,8 @@
      background: rgba(255, 255, 255, 0.1);
      padding: 17px 24px;
      position: absolute;
-     right: 0%;
-     top: 25%;
+     right: 4%;
+     top: 30%;
  }
 
  #header .positon-item .text-two h1 {
@@ -252,11 +265,11 @@
 
  /* header end */
  /* habit section start */
- #habit {
+ #habit .container {
      margin: 100px auto;
  }
 
- #habit .container .title-heading h1 {
+ #habit .title-heading h1 {
      color: rgb(255, 255, 255);
      font-size: 3rem;
      font-weight: 900;
@@ -278,6 +291,9 @@
 
  #habit .img-item {
      display: flex;
+     justify-content: space-between;
+     align-items: center;
+     gap: 40px;
      margin: 0 auto;
  }
 
@@ -292,6 +308,7 @@
      height: 180px;
      width: 180px;
      border-radius: 50%;
+     border: 4px solid var(--bg-secondary);
      overflow: hidden;
      margin-bottom: 30px;
 
@@ -327,82 +344,381 @@
  }
 
  /* habit section end */
+ /* run section start */
+ #Run-an-Extra {
+     margin: 50px auto;
+ }
+
+ #Run-an-Extra .content {
+     display: flex;
+     justify-content: space-between;
+     gap: 150px;
+     align-items: center;
+     margin: 0 auto;
+     background-color: var(--bg-secondary);
+     border-radius: 18px;
+     padding: 29px 32px;
+
+ }
+
+ #Run-an-Extra .img {
+     width: 366px;
+     height: 312px;
+     border-radius: 18px;
+     overflow: hidden;
+
+
+ }
+
+ #Run-an-Extra .img img {
+     width: 100%;
+     transform: translate(-40%, 50%) scale(3);
+ }
+
+ #Run-an-Extra .text-item h1 {
+     color: rgb(255, 255, 255);
+     font-size: 3rem;
+     font-weight: 900;
+     line-height: 120%;
+     letter-spacing: 0%;
+     text-align: left;
+     margin-bottom: 15px;
+ }
+
+ #Run-an-Extra .text-item p {
+     color: rgba(255, 255, 255, 0.5);
+     font-size: 0.9rem;
+     font-weight: 400;
+     line-height: 24px;
+     letter-spacing: 0.3px;
+     text-align: left;
+     margin-bottom: 35px;
+ }
+
+
+
+ #Run-an-Extra .text-item a {
+     color: rgb(255, 255, 255);
+     font-size: 1.1rem;
+     font-weight: 600;
+     line-height: 22px;
+     letter-spacing: 0px;
+     text-align: left;
+     background: var(--bg-lighten);
+     padding: 16px 40px;
+     border-radius: 42px;
+ }
+
+ /* run section end */
+ /* training section  start*/
+
+ #training {
+     margin: 90px auto;
+ }
+
+ #training .text-content h1 {
+     color: rgb(255, 255, 255);
+     font-size: 3rem;
+     font-weight: 900;
+     line-height: 120%;
+     letter-spacing: 0%;
+     text-align: left;
+     margin-bottom: 14px;
+ }
+
+ #training .text-content p {
+     color: rgba(255, 255, 255, 0.5);
+     font-size: 0.9rem;
+     font-weight: 400;
+     line-height: 24px;
+     letter-spacing: 0.3px;
+     text-align: left;
+     margin-bottom: 50px;
+ }
+
+ #training .img-section-1 {
+     display: grid;
+     grid-template-columns: 23% 50% 27%;
+ }
+
+ #training .img-section-2 {
+     display: grid;
+     grid-template-columns: 40% 25% 35%;
+ }
+
+
+ #training .img-section-1 .section-1 {
+     width: 100%;
+     height: 215px;
+     overflow: hidden;
+     background: url(../images/exercise1.jpg), rgba(6, 255, 210, 0.5);
+     background-blend-mode: overlay;
+     background-size: cover;
+     background-position: center;
+     background-repeat: no-repeat;
+ }
+
+ #training .img-section-1 .section-2 {
+     width: 100%;
+     height: 215px;
+     overflow: hidden;
+     background: url(../images/exercise2.png), rgba(255, 0, 0, 0.3);
+     background-blend-mode: overlay;
+     background-size: cover;
+     background-position: center;
+     background-repeat: no-repeat;
+ }
+
+ #training .img-section-1 .section-3 {
+     width: 100%;
+     height: 215px;
+     overflow: hidden;
+     background: url(../images/exercise3.png), rgba(0, 0, 0, 0.5);
+     background-blend-mode: overlay;
+     background-size: cover;
+     background-position: center;
+     background-repeat: no-repeat;
+ }
+
+ #training .img-section-2 .section-4 {
+     width: 100%;
+     height: 215px;
+     overflow: hidden;
+     background: url(../images/exercise4.png), rgba(0, 0, 0, 0.5);
+     background-blend-mode: overlay;
+     background-size: cover;
+     background-position: center;
+     background-repeat: no-repeat;
+ }
+
+ #training .img-section-2 .section-5 {
+     width: 100%;
+     height: 215px;
+     overflow: hidden;
+     background: url(../images/exercise5.jpg), rgba(66, 255, 0, 0.3);
+     background-blend-mode: overlay;
+     background-size: cover;
+     background-position: center;
+     background-repeat: no-repeat;
+ }
+
+ #training .img-section-2 .section-6 {
+     width: 100%;
+     height: 215px;
+     overflow: hidden;
+     background: url(../images/exercise6.jpg), rgba(0, 71, 255, 0.3);
+     background-blend-mode: overlay;
+     background-size: cover;
+     background-position: center;
+     background-repeat: no-repeat;
+ }
+
+ #training .left-content {
+     display: flex;
+     justify-content: left;
+     align-items: end;
+ }
+
+
+ #training .left-content h1 {
+     color: rgb(255, 255, 255);
+     font-size: 0.9rem;
+     font-weight: 500;
+     line-height: 17px;
+     letter-spacing: 0px;
+     text-align: left;
+     margin: 25px 30px;
+ }
+
+ #training .section-2 {
+     display: flex;
+     justify-content: left;
+
+ }
+
+ #training .section-4 {
+     display: flex;
+     justify-content: right;
+
+ }
+
+ #training .section-2 h1 {
+     color: rgb(255, 255, 255);
+     font-size: 0.9rem;
+     font-weight: 500;
+     line-height: 17px;
+     letter-spacing: 0px;
+     text-align: left;
+     margin: 25px 30px;
+
+ }
+
+ #training .section-4 h1 {
+     color: rgb(255, 255, 255);
+     font-size: 0.9rem;
+     font-weight: 500;
+     line-height: 17px;
+     letter-spacing: 0px;
+     text-align: left;
+     margin: 25px 30px;
+
+ }
+
+ #training .section-1 h1 {
+     color: black;
+ }
+
+ /* training section  end*/
+ /* training section  start*/
+
 
  /* small device media-quary start*/
  @media screen and (max-width:576px) {
-     .navbar {
+
+     .nav-bar,
+     .hero-section {
+         margin: 0px 20px;
+     }
+
+     #habit,
+     #Run-an-Extra,
+     #training {
+         margin: 90px 20px;
+     }
+
+     /* basic css */
+     #header .nav-item ul {
          display: none;
      }
 
-     #header .hero-section .title {
-         margin: 50px 0px;
+     #header .nav-item .manu-icon {
+         display: block;
+         font-size: 1.5rem;
      }
-     
-     .hero-section {
+
+     #header .hero-section {
          flex-direction: column;
-     }
-
-     #header .hero-section .btn button a {
-         padding: 16px 20px;
-
      }
 
      #header .positon-item .text-one {
          position: absolute;
-         left: -15%;
-         bottom: 45%;
-     }
-     #header .positon-item .text-two {
-         position: absolute;
-         right: -15%;
-         top: 8%;
+         left: 0%;
+         bottom: 40%;
      }
 
+     #header .positon-item .text-two {
+         position: absolute;
+         right: -20%;
+         top: 15%;
+     }
+
+     #header .hero-section .btn button a {
+         padding: 10px 20px;
+
+     }
+
+     #header .hero-section .btn {
+         gap: 10px;
+     }
+
+     /* header navbar and hero section */
      #habit .img-item {
          display: grid;
          grid-template-columns: repeat(1, 1fr);
+         gap: 40px;
+         margin: 0 auto;
+
      }
 
-     #habit .item p {
-         width: 231px;
-         margin-bottom: 40px;
-     }
 
-     #habit {
-         margin: 50px auto;
-     }
- }
+     /* habit section */
 
- /* small device media-quary  end*/
- 
- /* xl-device media-quary start*/
- @media screen and (max-width:992px) and (min-width:576px) {
-
-     #header .hero-section .title {
-         margin:70px;
-     }
-     #header .hero-section .title h1 {
-        margin-right: 180px;
-    }
-.hero-section {
+     #Run-an-Extra .content {
          flex-direction: column;
      }
 
-     #header .nav-item ul li {
-         margin: 0px 8px;
+     #Run-an-Extra .content {
+         padding-bottom: 90px;
      }
 
-     #header .nav-item a {
-         padding: 8px 15px;
+     #Run-an-Extra .text-item h1 {
+         text-align: center;
      }
 
-     #header .nav-item ul {
-         padding: 12px 10px;
-
+     #Run-an-Extra .text-item p {
+         text-align: center;
      }
 
-     .navbar {
-         margin: 0px 10px;
+     #Run-an-Extra .text-item {
+         display: flex;
+         flex-direction: column;
+         justify-content: center;
+         align-items: center;
+     }
+
+     #Run-an-Extra .text-item button {
+         width: 100%;
+         height: 54px;
+         background-color: var(--bg-lighten);
+         border-radius: 42px;
+     }
+
+     /* run and extra section */
+     #training .img-section-1 .section-3 {
+         display: none;
+     }
+
+     #training .img-section-2 .section-6 {
+         display: none;
+     }
+
+     #training .img-section-1 {
+         display: grid;
+         grid-template-columns: 50% 50%;
+     }
+
+     #training .img-section-2 {
+         display: grid;
+         grid-template-columns: 50% 50%;
+     }
+
+     /* traing section */
+
+ }
+
+ /* small device media-quary  end*/
+
+ /* xl-device media-quary start*/
+ @media screen and (max-width:992px) and (min-width:576px) {
+
+     .nav-bar,
+     .hero-section {
+         margin: 0px 20px;
+         gap: 10px;
+     }
+
+     #habit,
+     #Run-an-Extra,
+     #training {
+         margin: 90px 20px;
+     }
+
+     /* basic css */
+     #header .nav-item a
+      {
+        
+        margin: 0 10px;
+    }
+     #header .hero-section .title {
+         margin: 70px;
+     }
+
+     #header .hero-section .title h1 {
+         margin-right: 180px;
+     }
+
+     .hero-section {
+         flex-direction: column;
      }
 
      #header .hero-section .img {
@@ -421,21 +737,39 @@
          top: 10%;
      }
 
+     /* hero section  */
      #habit .img-item {
          display: grid;
          grid-template-columns: repeat(2, 1fr);
      }
+
+     #Run-an-Extra .img {
+         width: 256px;
+         height: 319px;
+         border-radius: 18px;
+         overflow: hidden;
+
+
+     }
+
 
      #habit .item p {
          width: 231px;
          margin-bottom: 40px;
      }
 
-     #habit {
-         margin: 50px auto;
+     /* habit section  */
+     #training .img-section-1 {
+         display: grid;
+         grid-template-columns: 32% 36% 32%;
      }
+
+     #training .img-section-2 {
+         display: grid;
+         grid-template-columns: 40% 30% 30%;
+     }
+
+     /* traing section */
  }
 
  /* xl-device media-quary  end*/
- /* large device media-quary start*/
- /* large device media-quary  end*/
