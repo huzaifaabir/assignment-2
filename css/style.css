@@ -603,31 +603,35 @@
      text-align: center;
  }
 
- #bmi-calculator{
-    max-width: 1440px;
-    background-color: var(--bg-secondary);
-    margin-bottom: 90px;
-    padding: 60px 0px;
-}
-#bmi-calculator .calculate-chart {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+ #bmi-calculator {
+     max-width: 1440px;
+     background-color: var(--bg-secondary);
+     margin: 0px auto;
+     margin-bottom: 90px;
+     padding: 60px 0px;
+ }
 
-     
+ #bmi-calculator .calculate-chart {
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+
+
+
  }
 
  #bmi-calculator .table {
      flex: 1;
  }
+
  #bmi-calculator .table .header h1 {
-    color: rgb(255, 255, 255);
-    font-size: 1.5rem;
-    font-weight: 900;
-    line-height: 120%;
-    letter-spacing: 0%;
-    text-align: left;
-    margin-bottom: 52px;
+     color: rgb(255, 255, 255);
+     font-size: 1.5rem;
+     font-weight: 900;
+     line-height: 120%;
+     letter-spacing: 0%;
+     text-align: left;
+     margin-bottom: 52px;
  }
 
  #bmi-calculator .table table {
@@ -661,7 +665,7 @@
 
  #bmi-calculator .bmi-form {
      flex: 1;
-     
+
  }
 
  #bmi-calculator .bmi-form h1 {
@@ -714,9 +718,10 @@
      outline: none;
  }
 
- #bmi-calculator .btn  {
-    margin-top: 34px;
+ #bmi-calculator .btn {
+     margin-top: 34px;
  }
+
  #bmi-calculator .btn a {
      color: rgb(255, 255, 255);
      font-size: 1.2rem;
@@ -729,6 +734,119 @@
  }
 
  /* BMI section end*/
+ /* meet our team section start*/
+
+ #meet-our-team .heading h2 {
+     color: rgb(255, 255, 255);
+     font-size: 3rem;
+     font-weight: 900;
+     line-height: 120%;
+     letter-spacing: 0%;
+     text-align: center;
+ }
+
+ #meet-our-team .heading p {
+     color: rgba(255, 255, 255, 0.5);
+
+     font-size: 0.9rem;
+     font-weight: 400;
+     line-height: 24px;
+     letter-spacing: 0.3px;
+     text-align: center;
+ }
+
+ #meet-our-team .img-content {
+     display: grid;
+     grid-template-columns: repeat(3, 2fr);
+     background-color: var(--bg-secondary);
+     border-radius: 18px;
+     padding: 20px;
+     margin: 54px auto;
+     gap: 20px;
+
+ }
+
+ #meet-our-team .img-content .image {
+     width: 100%;
+     height: 272px;
+     border-radius: 18px;
+     margin: 0px auto;
+     display: flex;
+     justify-content: left;
+     align-items: end;
+ }
+
+ #meet-our-team .img-content .trainer-1 {
+     background: url(../images/trainer1.png), rgba(0, 0, 0, 0.2);
+     background-blend-mode: overlay;
+     background-repeat: no-repeat;
+     background-size: cover;
+     background-position: top;
+ }
+
+ #meet-our-team .img-content .trainer-2 {
+     background: url(../images/trainer2.png), rgba(0, 0, 0, 0.2);
+     background-blend-mode: overlay;
+     background-repeat: no-repeat;
+     background-size: cover;
+     background-position: top;
+ }
+
+ #meet-our-team .img-content .trainer-3 {
+     background: url(../images/trainer3.png), rgba(0, 0, 0, 0.2);
+     background-blend-mode: overlay;
+     background-repeat: no-repeat;
+     background-size: cover;
+     background-position: top;
+ }
+
+ #meet-our-team .img-content .trainer-4 {
+     background: url(../images/trainer4.png), rgba(0, 0, 0, 0.2);
+     background-blend-mode: overlay;
+     background-repeat: no-repeat;
+     background-size: cover;
+     background-position: top;
+ }
+
+ #meet-our-team .img-content .trainer-5 {
+     background: url(../images/trainer5.png), rgba(0, 0, 0, 0.2);
+     background-blend-mode: overlay;
+     background-repeat: no-repeat;
+     background-size: cover;
+     background-position: top;
+ }
+
+ #meet-our-team .img-content .trainer-6 {
+     background: url(../images/trainer6.png), rgba(0, 0, 0, 0.2);
+     background-blend-mode: overlay;
+     background-repeat: no-repeat;
+     background-size: cover;
+     background-position: top;
+ }
+
+ #meet-our-team .img-content .name {
+     margin: 20px;
+ }
+
+ #meet-our-team .img-content .name h1 {
+     color: rgb(255, 255, 255);
+     font-size: 1.4rem;
+     font-weight: 900;
+     line-height: 120%;
+     letter-spacing: 0%;
+ }
+
+ #meet-our-team .img-content p {
+     color: rgba(255, 255, 255, 0.5);
+     font-size: 0.9rem;
+     font-weight: 400;
+     line-height: 24px;
+     letter-spacing: 0.3px;
+
+
+ }
+
+ /* meet our team section end*/
 
 
  /* small device media-quary start*/
@@ -743,7 +861,8 @@
      #Run-an-Extra,
      #training,
      .calculate-chart,
-     #bmi-calculator-header{
+     #bmi-calculator-header,
+     #meet-our-team {
          margin: 90px 20px;
      }
 
@@ -854,13 +973,31 @@
 
      /* traing section */
      #bmi-calculator .calculate-chart {
-        flex-direction: column;
-        gap: 42px;
-        justify-content: left;
-        
-         
+         flex-direction: column;
+         gap: 42px;
+         justify-content: left;
+
+
      }
-    
+
+     #bmi-calculator {
+         padding: 1px 0px;
+     }
+
+     #bmi-calculator-header .heading h1 {
+         text-align: left;
+     }
+
+     #bmi-calculator-header .heading p {
+         text-align: left;
+     }
+
+     /*BMI- calculate section */
+     #meet-our-team .img-content {
+         grid-template-columns: repeat(1, 1fr);
+
+     }
+
      /*BMI- calculate section */
 
  }
@@ -880,7 +1017,8 @@
      #Run-an-Extra,
      #training,
      .calculate-chart,
-     #bmi-calculator-header{
+     #bmi-calculator-header,
+     #meet-our-team {
          margin: 90px 20px;
      }
 
@@ -950,16 +1088,18 @@
 
      /* traing section */
      #bmi-calculator .calculate-chart {
-        flex-direction: column;
-        gap: 42px;
-        justify-content: left;
-        
-         
+         flex-direction: column;
+         gap: 42px;
+         justify-content: left;
+
+
      }
-     #bmi-calculator .btn  {
-        margin-top: 34px;
-        text-align: center;
+
+     #bmi-calculator .btn {
+         margin-top: 34px;
+         text-align: center;
      }
+
      /* BMI-calculate section */
  }
 
