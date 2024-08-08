@@ -38,7 +38,8 @@
         flex-direction: column;
     }
     #header .hero-section .title h1 {
-        font-size: 2rem;
+        font-size: 2.2rem;
+        text-wrap: balance;
     }
     #header .hero-section .title span {
         font-size: 5rem;
