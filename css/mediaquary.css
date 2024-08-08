@@ -55,7 +55,7 @@
 
     #header .positon-item .text-two {
         position: absolute;
-        right: 0%;
+        right: 2%;
         top: 15%;
         padding: 12px 18px;
     }
@@ -84,6 +84,10 @@
 
     #header .hero-section .btn {
         gap: 10px;
+    }
+    #header .hero-section .btn button a {
+        padding: 16px 20px;
+        font-size: 0.9rem;
     }
 
     /* header navbar and hero section */
@@ -239,16 +243,20 @@
     #header .nav-item a {
 
         margin: 0 10px;
+        font-size: 0.9rem;
     }
+    
 
     #header .hero-section .title {
         margin: 70px;
     }
 
-    #header .hero-section .title h1 {
-        margin-right: 180px;
-    }
+    #header .hero-section .btn button a {
+        padding: 16px 30px;
+        font-size: 1rem;
 
+   
+    }
     .hero-section {
         flex-direction: column;
     }
