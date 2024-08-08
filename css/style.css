@@ -39,6 +39,15 @@
      background-color: rgb(0, 0, 0);
      color: white;
  }
+ #habit,
+    #Run-an-Extra,
+    #training,
+    .calculate-chart,
+    #bmi-calculator-header,
+    #meet-our-team,
+    #challenge-section{
+        margin: 90px auto;
+    }
 
  /* basic css */
  /* header start */
@@ -273,10 +282,6 @@
 
  /* header end */
  /* habit section start */
- #habit .container {
-     margin: 100px auto;
- }
-
  #habit .title-heading h1 {
      color: rgb(255, 255, 255);
      font-size: 3rem;
@@ -353,14 +358,10 @@
 
  /* habit section end */
  /* run section start */
- #Run-an-Extra {
-     margin: 50px auto;
- }
-
  #Run-an-Extra .content {
      display: grid;
      grid-template-columns: repeat(2, 1fr);
-     gap: 50px;
+     gap: 90px;
      margin: 0 auto;
      background-color: var(--bg-secondary);
      border-radius: 18px;
@@ -415,11 +416,6 @@
 
  /* run section end */
  /* training section  start*/
-
- #training {
-     margin: 90px auto;
- }
-
  #training .text-content h1 {
      color: rgb(255, 255, 255);
      font-size: 3rem;
@@ -575,7 +571,6 @@
  /* training section  end*/
  /* BMI section start*/
  #bmi-calculator-header {
-     margin: 90px auto 52px auto;
      display: flex;
      flex-direction: column;
      justify-content: space-between;
@@ -849,9 +844,6 @@
 
  #challenge-section {
      max-width: 1440px;
-     margin: 90px auto;
-
-
  }
 
  #challenge-section .heading h1 {
@@ -927,7 +919,7 @@
  #footer-section {
      max-width: 1440px;
      background-color: var(--bg-secondary);
-     margin: 90px auto 0 auto;
+     margin-top: 90px;
  }
 
  #footer-section .content-row {

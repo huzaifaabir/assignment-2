@@ -12,8 +12,8 @@
     .calculate-chart,
     #bmi-calculator-header,
     #meet-our-team,
-    #challenge-section {
-        margin: 90px 20px;
+    #challenge-section{
+        margin: 60px 20px;
     }
 
     /* basic css */
@@ -37,21 +37,46 @@
     #header .hero-section {
         flex-direction: column;
     }
+    #header .hero-section .title h1 {
+        font-size: 2.3rem;
+    }
+    #header .hero-section .title span {
+        font-size: 5rem;
+        
+    }
+   
 
     #header .positon-item .text-one {
         position: absolute;
-        left: -5%;
+        left: 0%;
         bottom: 40%;
         padding: 15px;
     }
 
     #header .positon-item .text-two {
         position: absolute;
-        right: -10%;
+        right: 0%;
         top: 15%;
-        padding: 15px;
+        padding: 12px 18px;
     }
+    #header .positon-item .text-one .text-item h1 {
+        font-size: 1.1rem;
+    }
+   
+    #header .positon-item .text-one .text-item p {
+        font-size: 0.7rem;
 
+    }
+    #header .positon-item .text-two h1 {
+        font-size: 1.9rem;
+        
+    }
+   
+    #header .positon-item .text-two p {
+        font-size: 0.6rem;
+
+    }
+   
     #header .hero-section .btn button a {
         padding: 10px 20px;
 
@@ -62,6 +87,9 @@
     }
 
     /* header navbar and hero section */
+    #habit .title-heading h1 {
+        font-size: 2rem;
+    }
     #habit .img-item {
         display: grid;
         grid-template-columns: repeat(1, 1fr);
@@ -79,11 +107,12 @@
     }
 
     #Run-an-Extra .text-item h1 {
-        text-align: center;
+        text-align:left;
+        font-size: 2rem;
     }
 
     #Run-an-Extra .text-item p {
-        text-align: center;
+        text-align: left;
     }
 
     #Run-an-Extra .text-item {
@@ -101,6 +130,9 @@
     }
 
     /* run and extra section */
+    #training .text-content h1 {
+        font-size: 2rem;
+    }
     #training .img-section-1 .section-3 {
         display: none;
     }
@@ -121,6 +153,9 @@
 
 
     /* traing section */
+    #bmi-calculator-header .heading h1 {
+        font-size: 2rem;
+    }
     #bmi-calculator .calculate-chart {
         flex-direction: column;
         gap: 42px;
@@ -148,6 +183,11 @@
     }
 
     /*meet our team section */ 
+    #meet-our-team .heading h2 {
+
+        font-size: 2rem;
+
+    }
     #challenge-section .card {
        flex-direction: column;
    }
@@ -156,6 +196,10 @@
     }
    
     /*challenge section */ 
+    #challenge-section .heading h1 {
+        font-size: 2rem;
+
+    }
     #footer-section .content-row {
         flex-direction: column;
         margin: 0 20px;
