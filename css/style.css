@@ -358,10 +358,9 @@
  }
 
  #Run-an-Extra .content {
-     display: flex;
-     justify-content: space-between;
-     gap: 150px;
-     align-items: center;
+     display: grid;
+     grid-template-columns: repeat(2, 1fr);
+     gap: 50px;
      margin: 0 auto;
      background-color: var(--bg-secondary);
      border-radius: 18px;
@@ -370,22 +369,16 @@
  }
 
  #Run-an-Extra .img-item {
-     flex: 1;
-     width: 80%;
-     height: auto;
+     width: 100%;
+     height: 100%;
      border-radius: 18px;
      overflow: hidden;
  }
 
  #Run-an-Extra .img-item img {
      width: 100%;
-     transform: translate(-30%, 40%) scale(3);
+     transform: translate(-35%, 40%) scale(3);
  }
-
- #Run-an-Extra .text-item {
-     flex: 1;
- }
-
  #Run-an-Extra .text-item h1 {
      color: rgb(255, 255, 255);
      font-size: 3rem;
@@ -1019,3 +1012,5 @@
 
 
  /*footer our team section end*/
+
+

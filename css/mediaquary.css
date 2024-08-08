@@ -40,14 +40,16 @@
 
     #header .positon-item .text-one {
         position: absolute;
-        left: 0%;
+        left: -5%;
         bottom: 40%;
+        padding: 15px;
     }
 
     #header .positon-item .text-two {
         position: absolute;
-        right: -14%;
+        right: -10%;
         top: 15%;
+        padding: 15px;
     }
 
     #header .hero-section .btn button a {
@@ -72,11 +74,8 @@
     /* habit section */
 
     #Run-an-Extra .content {
+        display: flex;
         flex-direction: column;
-    }
-
-    #Run-an-Extra .content {
-        padding-bottom: 90px;
     }
 
     #Run-an-Extra .text-item h1 {
@@ -231,15 +230,6 @@
         display: grid;
         grid-template-columns: repeat(2, 1fr);
     }
-
-    #Run-an-Extra .img-item {
-        width: 60%;
-        height: auto;
-
-
-    }
-
-
     #habit .item p {
         width: 231px;
         margin-bottom: 40px;
